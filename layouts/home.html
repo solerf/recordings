@@ -12,7 +12,7 @@
                                 <span class="tags">
                                     {{ $tags := slice }}
                                     {{ range .GetTerms "tags" }}
-                                    {{ $tags = $tags | append (printf "<%s>" .LinkTitle) }}
+                                    {{ $tags = $tags | append (lower .LinkTitle | printf "<%s>") }}
                                     {{ end }}
                                     {{ delimit $tags "" }}
                                 </span>

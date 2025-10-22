@@ -1,12 +1,18 @@
 {{ define "main" }}
+<p>
+    <a href="/"><< Back</a>
+</p>
 <div class="note-content">
     <h1>{{ .Date.Format "2006-01-02" }} - {{ .Params.Title }}</h1>
     {{ $tags := slice }}
     {{ range .GetTerms "tags" }}
-    {{ $tags = $tags | append (printf "<%s>" .LinkTitle) }}
+    {{ $tags = $tags | append (lower .LinkTitle | printf "<%s>") }}
     {{ end }}
     <h4>{{ delimit $tags "" }}</h4>
     <hr>
     {{ .Content }}
 </div>
+<p>
+    <a href="/"><< Back</a>
+</p>
 {{ end }}

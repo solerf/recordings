@@ -20,6 +20,6 @@ summaryLength = 20
 [markup]
   [markup.highlight]
     lineNos = true
-    lineNumbersInTable = false
+    lineNumbersInTable = true
     style = 'doom-one2'
     wrapperClass = 'highlight'
