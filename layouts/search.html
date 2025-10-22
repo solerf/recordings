@@ -1,0 +1,29 @@
+{{ define "main" }}
+<div>
+    <input id="tagName" type="text" placeholder="tag name"/>
+    <button>Search</button>
+</div>
+
+<section>
+    <ul>
+        {{ range $term, $taxonomy := .Site.Taxonomies.tags }}
+        <li id="{{ $term }}">
+            <p>{{ $term }}</p>
+        </li>
+        <ul>
+            {{ range $taxonomy.Pages }}
+            <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+            {{ end }}
+        </ul>
+        {{ end }}
+    </ul>
+</section>
+
+<script>
+    document.querySelector('button').addEventListener('click', e => {
+        let tn = document.querySelector("#tagName").value;
+        console.log(document.querySelectorAll(`li#${tn}`))
+    });
+</script>
+
+{{ end }}

@@ -1,0 +1,27 @@
+{{ define "main" }}
+<section>
+    <ul>
+        {{ range where .Pages "Section" "notes" }}
+            {{ range first .Site.Params.maxNotes (.Pages.GroupByPublishDate "2006-01-02") }}
+                <li>
+                    <p>{{ .Key }}</p>
+                    <ul>
+                        {{ range .Pages }}
+                            <li>
+                                <span><a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
+                                <span class="tags">
+                                    {{ $tags := slice }}
+                                    {{ range .GetTerms "tags" }}
+                                    {{ $tags = $tags | append (printf "<%s>" .LinkTitle) }}
+                                    {{ end }}
+                                    {{ delimit $tags "" }}
+                                </span>
+                            </li>
+                        {{ end }}
+                    </ul>
+                </li>
+            {{ end }}
+        {{ end }}
+    </ul>
+</section>
+{{ end }}

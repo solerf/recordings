@@ -1,0 +1,87 @@
+body {
+    width: 100%;
+    margin: 0 auto;
+    font-family: Fira Code, system-ui, sans-serif, Roboto;
+}
+
+input {
+    font-family: Fira Code, system-ui, sans-serif, Roboto;
+}
+
+button {
+    font-family: Fira Code, system-ui, sans-serif, Roboto;
+    cursor: pointer;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+
+    nav ul {
+        list-style: none;
+        padding: 1.3rem 1.3rem 1.3rem 0;
+        margin: 0;
+        background: #282c34;
+        font-size: 1.5rem;
+
+        a {
+            color: #fff;
+            text-decoration: none;
+
+            &:hover {
+                font-style: italic;
+                text-decoration: underline;
+            }
+
+            &.active {
+                font-style: italic;
+                text-decoration: underline;
+            }
+        }
+
+        li {
+            display: inline;
+            padding: 0 0 0 1.3rem;
+        }
+    }
+}
+
+main {
+    margin: 1.3rem 0 1.3rem 0;
+    padding: 0 2rem 0 2rem;
+    font-size: 1.2rem;
+}
+
+footer {
+    background: #f2f2f2;
+    padding: 2px 2px;
+    font-size: .7em;
+    text-align: center;
+}
+
+section {
+    ul li p {
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+
+    ul li .tags {
+        font-size: 0.9rem;
+        color: #282c34;
+        font-style: italic;
+    }
+}
+
+.note-content {
+    h1 {
+        color: #282c34;
+        margin-bottom: 0;
+    }
+
+    h4 {
+        color: #282c34;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-style: italic;
+    }
+}
