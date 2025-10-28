@@ -1,8 +1,8 @@
 +++
-title = 'Git_undo_ammend'
+title = 'Git undo amend'
 date = '2025-10-25T00:39:50+02:00'
 draft = false
-tags = []
+tags = ['git']
 +++
 
 To undo a `commit --amend` done by mistake:
