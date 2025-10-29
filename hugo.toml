@@ -1,7 +1,12 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://solerf.github.io/recordings/'
 languageCode = 'en-us'
 title = 'Recordings'
 summaryLength = 20
+
+# keep taxonomy to show tags
+# disableKinds = ["term", "section"]
+# as taxonomy is kept, it will get a console error message
+# ignoreErrors = ["error-disable-taxonomy"]
 
 [params]
     author = "solerf"
@@ -23,3 +28,4 @@ summaryLength = 20
     lineNumbersInTable = true
     style = 'doom-one2'
     wrapperClass = 'highlight'
+

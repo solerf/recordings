@@ -1,6 +1,6 @@
 {{ define "main" }}
 <p>
-    <a href="/"><< Back</a>
+    <a href="{{ .Site.BaseURL }}"><< Back</a>
 </p>
 <div class="note-content">
     <h1>{{ .Date.Format "2006-01-02" }} - {{ .Params.Title }}</h1>
@@ -13,6 +13,6 @@
     {{ .Content }}
 </div>
 <p>
-    <a href="/"><< Back</a>
+    <a href="{{ .Site.BaseURL }}"><< Back</a>
 </p>
 {{ end }}

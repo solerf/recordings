@@ -5,7 +5,7 @@ draft = false
 tags = ['linux']
 +++
 
-When wrongly typing `ALT + F keys` a new tty will be open losing where you were, usually the desktop.
+When wrongly typing `ALT + F keys` a new `tty` will be open, losing where you were, usually the desktop.
 
 Use the `w` command to see where you are:
 ```shell

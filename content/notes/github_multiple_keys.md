@@ -8,7 +8,7 @@ tags = ['git', 'ssh']
 Once ssh key(s)  already generated, as per [GitHub generate keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent),
 they need to be configured at a `config` file under `~/.ssh` with:
 
-```
+```shell
 Host THE_IDENTIFIER_OF_THE_HOST_1
   HostName github.com
   User git

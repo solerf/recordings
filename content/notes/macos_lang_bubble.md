@@ -7,7 +7,7 @@ tags = ['macos']
 
 I think it started to appear in Sonoma version, in any case to stop this annoying thing:
 
-![image](/images/macos_lang_bubble.png)
+![image](/recordings/images/macos_lang_bubble.png)
 
 ```shell
 # 1st
