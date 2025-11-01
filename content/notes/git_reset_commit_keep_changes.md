@@ -1,8 +1,8 @@
 +++
-title = 'Gitr reset commit & keep changes'
+title = 'Git reset commit & keep changes'
 date = '2025-10-31T23:15:22+01:00'
 draft = false
-tags = []
+tags = ['git']
 +++
 
 When a commit is done by mistake or whatever to undo it but keep the changes, run:
